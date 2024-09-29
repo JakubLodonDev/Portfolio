@@ -1,0 +1,61 @@
+/**************************/
+/* SCROLLING TEXT*/
+/**************************/
+
+.scrolling-text {
+  font-size: 2.4rem;
+  text-align: center;
+  word-wrap: break-word;
+  position: fixed;
+  left: 0;
+}
+
+.scrolling-text-down {
+  top: 0;
+  width: 3.2rem;
+  opacity: 0.2;
+  margin-left: 8rem;
+}
+
+.scrolling-text-up {
+  bottom: 0;
+  width: 3.2rem;
+  opacity: 0.5;
+  margin-left: 12rem;
+}
+
+.scrolling-text-down:nth-child(1) {
+  margin-left: 16rem;
+}
+
+.scrolling-text-down {
+  animation: MoveDownAndUp 100s linear infinite;
+}
+
+@keyframes MoveDownAndUp {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+.scrolling-text-up {
+  animation: MoveUpAndDown 100s linear infinite;
+}
+
+@keyframes MoveUpAndDown {
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(20%);
+  }
+}
