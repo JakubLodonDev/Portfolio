@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #2c2c2c;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
   padding-left: 20rem;
   height: 100vh;
 }
@@ -67,7 +67,7 @@ body {
 /**************************/
 
 .hero-section {
-  padding-top: 9.6rem;
+  padding-top: 8rem;
   margin: 0 12.8rem;
 }
 .hero {
@@ -136,4 +136,29 @@ body {
 .main-lang-icon {
   font-size: 4rem;
   color: #ff8800;
+}
+
+.hero-bar {
+  background-color: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 150rem;
+  margin: 9.6rem auto;
+}
+
+.hero-bar-item {
+  padding: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.hero-bar-number {
+  font-size: 6.4rem;
+  color: #ff8800;
+}
+
+.hero-bar-description {
+  font-size: 2.4rem;
 }
