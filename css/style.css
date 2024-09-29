@@ -22,6 +22,42 @@ html {
 
 body {
   background-color: #2c2c2c;
-  padding-left: 25.6rem;
+  padding-left: 20rem;
   height: 100vh;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* margin-right: 10rem; */
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 9rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline;
+  text-decoration: none;
+  color: #cacaca;
+  font-weight: 500;
+  font-size: 3rem;
+  padding: 4rem 4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ff8800;
 }
