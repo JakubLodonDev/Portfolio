@@ -22,20 +22,20 @@ html {
 
 body {
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-  padding-left: 20rem;
-  height: 100vh;
 }
 
 /**************************/
 /* NAVIGATION */
 /**************************/
 
-.header {
+.container {
+  padding: 0.8rem 20rem;
+}
+
+.header-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  /* margin-right: 10rem; */
 }
 
 .main-nav-list {
@@ -68,9 +68,9 @@ body {
 
 .hero-section {
   padding-top: 8rem;
-  margin: 0 12.8rem;
 }
-.hero {
+
+.hero-container {
   display: grid;
   grid-template-columns: 60fr 40fr;
   column-gap: 6.4rem;
@@ -83,18 +83,20 @@ body {
 
 .heading-primary {
   font-size: 5.2rem;
-  padding: 4.8rem;
+  padding: 4.8rem 0 4.8rem 4.8rem;
   font-weight: normal;
 }
 
 .heading-primary span {
   font-size: 7.4rem;
   color: #ff8800;
-  padding: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  display: inline-block;
 }
 
 .hero-img-box {
   padding-top: 9.6rem;
+  padding-right: 4.8rem;
   grid-row: span 2;
 }
 .hero-img {
@@ -139,12 +141,18 @@ body {
 }
 
 .hero-bar {
+  margin: 9.6rem 20rem;
+}
+
+.hero-bar-container {
   background-color: #1e1e1e;
   border-radius: 50px;
   display: flex;
   justify-content: space-around;
-  max-width: 150rem;
-  margin: 9.6rem auto;
+  align-items: center;
+  margin: 0 3.2rem;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero-bar-item {
