@@ -21,7 +21,6 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
 }
 
 /**************************/
@@ -30,6 +29,11 @@ body {
 
 .container {
   padding: 0.8rem 20rem;
+}
+
+.header {
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+  padding-bottom: 4.8rem;
 }
 
 .header-container {
@@ -53,13 +57,29 @@ body {
   color: #cacaca;
   font-weight: 500;
   font-size: 3rem;
-  padding: 4rem 4rem;
+  padding: 2rem 2rem;
+  position: relative;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #ff8800;
+}
+
+.main-nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff8800;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+.main-nav-link:hover::after {
+  width: 100%;
 }
 
 /**************************/
@@ -142,6 +162,8 @@ body {
 
 .hero-bar {
   margin: 9.6rem 20rem;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-bar-container {
@@ -151,6 +173,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0 3.2rem;
+  width: 160rem;
 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
