@@ -28,12 +28,12 @@ body {
 /**************************/
 
 .container {
-  padding: 0.8rem 20rem;
+  padding: 0 20rem;
 }
 
 .header {
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-  padding-bottom: 4.8rem;
+  padding: 6.4rem 0;
 }
 
 .header-container {
@@ -83,7 +83,7 @@ body {
 }
 
 /**************************/
-/* HERO */
+/* HERO SECTION */
 /**************************/
 
 .hero-section {
@@ -161,7 +161,7 @@ body {
 }
 
 .hero-bar {
-  margin: 9.6rem 20rem;
+  padding-top: 4.8rem;
   display: flex;
   justify-content: center;
 }
@@ -192,4 +192,35 @@ body {
 
 .hero-bar-description {
   font-size: 2.4rem;
+}
+
+/**************************/
+/* ABOUT SECTION */
+/**************************/
+
+.about-section {
+  background-color: #3f3f3f;
+  padding: 6.4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 150rem;
+}
+
+.heading-secondary {
+  padding: 0 2.4rem 2.4rem 2.4rem;
+  font-size: 4.4rem;
+  color: #ff8800;
+}
+
+.about-content {
+  font-size: 2.4rem;
+  padding: 1rem 6.4rem;
+}
+
+.about-content span {
+  font-size: 3.2rem;
+  color: #ff8800;
 }
