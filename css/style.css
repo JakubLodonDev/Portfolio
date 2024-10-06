@@ -44,8 +44,16 @@ body {
   color: #ff8800;
 }
 
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  color: #ff8800;
+}
+
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   letter-spacing: -0.5px;
 }
@@ -61,6 +69,24 @@ body {
 .link:hover,
 .link:active {
   color: #ff8800;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 50px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  transition: all 0.3s;
 }
 
 /**************************/
@@ -333,7 +359,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 8rem;
   row-gap: 6.4rem;
-  margin: 0 auto;
   max-width: 150rem;
 }
 
@@ -405,6 +430,96 @@ body {
 
 .portfolio-link:hover::after {
   width: 100%;
+}
+
+/**************************/
+/* FOOTER SECTION */
+/**************************/
+
+.footer {
+  background: linear-gradient(41deg, #2c2c2c, #1a1a1a);
+  padding: 9.6rem 0;
+}
+
+.heading-tertiary span {
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.cta-container {
+  max-width: 140rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 2.4rem;
+  padding: 0 3.2rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  color: #ff8800;
+}
+
+.cta-form input {
+  width: 100%;
+  padding-bottom: 0.6rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+
+  border-bottom: 1px solid #ff8800;
+}
+
+.cta-form input::placeholder {
+  color: #717171;
+}
+
+.cta-container *:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn--form {
+  background-color: #ff8800;
+  color: #fff;
+  width: 25rem;
+}
+
+.message {
+  grid-column: span 2;
+}
+
+.btn--form {
+  grid-column: span 2;
+  justify-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.8rem;
+  border: 1px solid #ff8800;
+}
+
+.btn--form:hover {
+  background-color: transparent;
+  vertical-align: top;
+}
+
+.btn--form img {
+  filter: invert(1);
+  width: 2rem;
 }
 
 /* HELPER/SETTINGS CLASSES */
