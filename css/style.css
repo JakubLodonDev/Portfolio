@@ -522,6 +522,44 @@ body {
   width: 2rem;
 }
 
+/**************************/
+/* CONTACT SECTION */
+/**************************/
+
+.contact-section {
+  padding-top: 6.4rem;
+}
+
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.contact-info {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.2rem;
+  background-color: #ff8800;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+
+.social-media img {
+  padding-top: 3.2em;
+  width: 6rem;
+  filter: invert(1);
+}
+
 /* HELPER/SETTINGS CLASSES */
 .center-text {
   text-align: center;
