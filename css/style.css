@@ -29,6 +29,7 @@ body {
 
 .container {
   padding: 0 20rem;
+  margin: 0 auto;
 }
 
 .heading-primary {
@@ -39,7 +40,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 9.6rem;
   color: #ff8800;
 }
 
@@ -49,13 +50,26 @@ body {
   letter-spacing: -0.5px;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #ff8800;
+}
+
 /**************************/
 /* NAVIGATION */
 /**************************/
 
 .header {
   background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
-  padding: 6.4rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .header-container {
@@ -215,7 +229,7 @@ body {
 
 .about-section {
   background-color: #3f3f3f;
-  padding: 6.4rem 0;
+  padding: 9.6rem 0;
   display: flex;
   justify-content: center;
 }
@@ -225,12 +239,12 @@ body {
 }
 
 .about-container .heading-secondary {
-  padding: 0 2.4rem 2.4rem 2.4rem;
+  padding: 0 2.4rem 0 2.4rem;
 }
 
 .about-content {
   font-size: 2.4rem;
-  padding: 1rem 6.4rem;
+  padding: 0 6.4rem;
 }
 
 .about-content span {
@@ -244,7 +258,7 @@ body {
 
 .skill-section {
   background-color: #3f3f3f;
-  padding: 6.4rem 0;
+  padding: 9.6rem 0;
 }
 
 .skill-container {
@@ -303,6 +317,94 @@ body {
 
 .skill-box:nth-last-child(1) {
   grid-column: span 2;
+}
+
+/**************************/
+/* SKILL SECTION */
+/**************************/
+
+.portfolio-section {
+  background-color: #3f3f3f;
+  padding: 9.6rem 0;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 8rem;
+  row-gap: 6.4rem;
+  margin: 0 auto;
+  max-width: 150rem;
+}
+
+.portfolio-box {
+  margin: 0 3.2rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: all 0.4s;
+  border: 1px solid #ff8800;
+
+  grid-column: span 2;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.portfolio-content {
+  background-color: #1e1e1e;
+  padding: 2.4rem;
+}
+
+.portfolio-title {
+  color: #ff8800;
+  font-size: 3rem;
+}
+
+.portfolio-description {
+  padding: 1.6rem 0;
+  font-size: 2.4rem;
+  height: 12rem;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  height: 18rem;
+  align-content: flex-start;
+}
+
+.tag {
+  padding: 0.8rem 1.6rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #616161;
+  border-radius: 30px;
+}
+
+.portfolio-link {
+  font-size: 2.4rem;
+  color: #c1c1c1;
+  position: relative;
+}
+
+.portfolio-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff8800;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
+.portfolio-link:hover::after {
+  width: 100%;
 }
 
 /* HELPER/SETTINGS CLASSES */
