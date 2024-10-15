@@ -292,7 +292,6 @@ body {
   grid-template-columns: repeat(6, 1fr);
   gap: 2.4rem;
   align-items: center;
-  justify-content: center;
   justify-items: center;
   margin: 0 auto;
   max-width: 150rem;
@@ -309,9 +308,6 @@ body {
   transition: all 0.3s ease-in-out;
   width: 25rem;
   grid-column: span 2;
-}
-
-.skill-img-box {
 }
 
 .skill-img {
@@ -337,11 +333,15 @@ body {
   scale: 1.3;
 }
 
-.skill-box:nth-last-child(2) {
+.skill-box:last-child:nth-child(3n + 1) {
+  grid-column: 2 / span 4;
+}
+
+.skill-box:nth-last-child(2):nth-child(3n + 1) {
   grid-column: 2 / span 2;
 }
 
-.skill-box:nth-last-child(1) {
+.skill-box:nth-last-child(2):nth-child(3n + 2) {
   grid-column: span 2;
 }
 
