@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/asideAnimation.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +20,13 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <div class="text-aimation">
@@ -47,8 +55,8 @@
 
     <header class="header">
       <div class="container header-container">
-        <a href="#">
-          <img class="logo" alt="Imnifood logo" src="content/logoJakub.png" />
+        <a class="logo" href="#">
+          <span>&lt;</span>JakubDev<span>/&gt;</span>
         </a>
 
         <nav class="main-nav">
@@ -58,13 +66,18 @@
             <li><a class="main-nav-link" href="#">Contact</a></li>
           </ul>
         </nav>
+
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
 
       <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              Hello, I'm <br />
+              Hello, I'm
               <span>Jakub Lodoń</span>
             </h1>
           </div>
@@ -134,64 +147,48 @@
 
         <div class="container skill-container">
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img class="skill-img" src="content/java.png" alt="" />
-            </div>
+            <img class="skill-img" src="content/java.png" alt="" />
+
             <div class="skill-name">Java</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img class="skill-img" src="content/springBoot.png" alt="" />
-            </div>
+            <img class="skill-img" src="content/springBoot.png" alt="" />
+
             <div class="skill-name">Spring Boot</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img
-                class="skill-img normal"
-                src="content/postgreSQL.png"
-                alt=""
-              />
-            </div>
+            <img class="skill-img" src="content/postgreSQL.png" alt="" />
             <div class="skill-name">PostgreSQL</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img class="skill-img normal" src="content/html.png" alt="" />
-            </div>
+            <img class="skill-img" src="content/html.png" alt="" />
+
             <div class="skill-name">Html</div>
           </div>
 
           <div class="skill-box">
-            <img class="skill-img normal" src="content/css.png" alt="" />
+            <img class="skill-img" src="content/css.png" alt="" />
             <div class="skill-name">Css</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img
-                class="skill-img normal"
-                src="content/javaScript.png"
-                alt=""
-              />
-            </div>
+            <img class="skill-img" src="content/javaScript.png" alt="" />
+
             <div class="skill-name">JavaScript</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img class="skill-img normal" src="content/git.png" alt="" />
-            </div>
+            <img class="skill-img" src="content/git.png" alt="" />
+
             <div class="skill-name">Git</div>
           </div>
 
           <div class="skill-box">
-            <div class="skill-img-box">
-              <img class="skill-img normal" src="content/figma.png" alt="" />
-            </div>
+            <img class="skill-img" src="content/figma.png" alt="" />
+
             <div class="skill-name">Figma</div>
           </div>
         </div>
